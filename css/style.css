@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(30, 31, 29);
+}
+
+/* Categories-section */
+
+#categories-section {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#categories-section div {
+    transition: transform 0.45s;
+    flex: 0 0 32.3%;
+}
+
+.categories{
+    position: relative;
+}
+
+.categories:hover{    
+    transform: scale(1.01);
+    box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img:hover{
+    border-radius: 0.4rem;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 1.1rem;
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: 600;
+    text-shadow: 0.2rem 0.1rem #000000d8;
+
+}
+
+#sticky-about{
+    display: flex;
+    font-size: 1.4rem;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(30, 31, 29);
+    font-weight: 500;
+    z-index: 100;
+}
+
+#multiverse-text{
+    text-transform: uppercase;
+}
+
+#sticky-about div{
+    flex: 50%;
+    padding: 1.5rem 4.3rem;
+}
+
+#about{
+    text-align: right;
+}
+
+i{
+    margin-left: 0.5rem;
+}
+
+
+@media screen and (max-width: 800px){
+    #categories-section div {
+    flex: 50%;
+    }
+    #hide{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 550px){
+    #categories-section div {
+    flex: 100%;
+    }
+
+    #sticky-about{
+        font-size: 1rem;
+    }
+    .categories:hover{    
+    transform: scale(1);
+    box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0);
+    }
+    #hide{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
